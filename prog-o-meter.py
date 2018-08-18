@@ -268,7 +268,7 @@ class StartGUI(object):
         Attributes:
             BTTN_WIDTH: The width of the radiobuttons is hardcoded to 18 text units.
         """
-        BTTN_WIDTH = 18
+        BTTN_WIDTH = 20
         Tk.Radiobutton(self.root, text = "I already have a meter", variable = self.choice, value = 1, command = self.close_window, indicatoron = 0, width = BTTN_WIDTH).pack(pady = 5)
         Tk.Radiobutton(self.root, text = "I don't have a meter yet", variable = self.choice, value = 2, command = self.close_window, indicatoron = 0, width = BTTN_WIDTH).pack(pady = 5)
     def close_window(self):
